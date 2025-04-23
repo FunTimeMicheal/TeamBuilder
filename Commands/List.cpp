@@ -1,14 +1,7 @@
 #include "List.h"
 #include <iostream>
 
-class List
-{
-private:
-    /* data */
-public:
-    List(/* args */);
-    ~List();
-};
+
 
 void List::list() {
     if (Names.empty()) {

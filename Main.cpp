@@ -7,16 +7,12 @@
 #include "Add.h"
 #include "Remove.h"
 
-
-
-
-
-
 int main() {
     open_db();  // Verbinding maken met de database
     std::cout << "Database actief";
     create_table();  // Tabel aanmaken als die nog niet bestaat
-
+    std::map<std::string, std::pair<std::string, std::string>> NameManager::Names;
+    
     std::string command, input, name, internet, volwassen;
     std::cout << "Voer een commando in (add, remove, list, exit, groups): ";
 
