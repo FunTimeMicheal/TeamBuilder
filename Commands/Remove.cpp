@@ -1,25 +1,23 @@
 #include "Remove.h"
 #include <iostream>
+#include "TeamBuilder.h"
 
-class Remove
-{
-private:
-    /* data */
-public:
-    Remove(/* args */);
-    ~Remove();
-};
+Remove::Remove(){
+}
+Remove::~Remove(){
+}
 
 void Remove::remove(std::string person) {
-    auto it = Names.find(person); 
-if (it != Names.end()) {
-        Names.erase(it);  
+    auto& names= TeamBuilder::Names;
+    auto it = TeamBuilder::Names.find(person); 
+
+    if (it != names.end()) {
+        names.erase(it);  
         std::cout << "Verwijderd: " << person << "\n";
-    } else {
+    } 
+    else {
         std::cout << "Naam niet gevonden: " << person << "\n";
     }
 }
 
-Remove::~Remove()
-{
-}
+

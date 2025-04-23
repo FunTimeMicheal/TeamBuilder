@@ -4,8 +4,11 @@
 #include <string>  
 
 class Add {
-public:
-    std::string add(std::string a, std::string b, std::string c);
+    public:
+        Add::Add();
+        Add::~Add();
+        static void add(std::string a, std::string b, std::string c);
+
 };
 
 #endif

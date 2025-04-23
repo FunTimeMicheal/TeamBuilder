@@ -6,7 +6,10 @@
 
 class Remove
 {
-    void remove(std::string);
+    public:
+        Remove::Remove();
+        Remove::~Remove();
+        static void remove(std::string);
 };
 
 #endif

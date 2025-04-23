@@ -3,7 +3,10 @@
 
 class List
 {
-    void list();
+    public:
+        List::List();
+        List::~List();
+        static void list();
 };
 
 #endif
