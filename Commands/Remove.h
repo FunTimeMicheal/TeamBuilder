@@ -7,8 +7,8 @@
 class Remove
 {
     public:
-        Remove::Remove();
-        Remove::~Remove();
+        Remove();
+        ~Remove();
         static void remove(std::string);
 };
 

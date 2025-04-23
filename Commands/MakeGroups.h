@@ -7,9 +7,9 @@
 class MakeGroups
 {
     public:
-        MakeGroups::MakeGroups();
-        MakeGroups::~MakeGroups();
-        static void MakeGroups::makegroup(int);
+        MakeGroups();
+        ~MakeGroups();
+        static void makegroup(int);
     
     private:
         std::vector<std::vector<std::string>> team(int);

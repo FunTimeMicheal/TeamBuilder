@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Administrator/Desktop/Eierrun/SQLite",
-      "program": "c:/Users/Administrator/Desktop/Eierrun/SQLite/build/Debug/outDebug",
+      "cwd": "C:/Users/Administrator/Desktop/TeamBuilder",
+      "program": "C:/Users/Administrator/Desktop/TeamBuilder/build/Debug/Main.o",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

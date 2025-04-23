@@ -4,8 +4,8 @@
 class List
 {
     public:
-        List::List();
-        List::~List();
+        List();
+        ~List();
         static void list();
 };
 

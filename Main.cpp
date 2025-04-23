@@ -5,7 +5,7 @@
 #include "Remove.h"
 
 
-void main_loop() {
+int main_loop() {
     std::string command, input, name, internet, volwassen;
     std::cout << "Voer een commando in (add, remove, list, exit, groups): ";
 
@@ -58,5 +58,6 @@ void main_loop() {
 
         std::cout << "Voer een commando in (add, remove, list, exit, groups): ";
     }
+    return 0;
 }
  
