@@ -1,11 +1,12 @@
 #include <iostream>
-#include <vector>
 #include <map>
-#include <bits/algorithmfwd.h>
-#include <random>
-#include <algorithm>  
 #include "DataBase.h"
 #include "sqlite3.h"
+#include "MakeGroups.h"
+#include "List.h"
+#include "Add.h"
+#include "Remove.h"
+
 
 
 
@@ -41,15 +42,15 @@ int main() {
                 std::cout << "Heeft internet: Y or N? ";
                 std::cin >> internet;
             }
-            NameManager::add(name, volwassen, internet);
+            Add::add(name, volwassen, internet);
         } 
         else if (command == "remove") {
             std::cout << "Voer een naam in: ";
             std::cin >> input;
-            NameManager::remove(input);
+            Remove::remove(input);
         } 
         else if (command == "list") {
-            NameManager::list();
+            List::list();
         } 
         else if (command == "groups") {
             int groepen = 0;
@@ -57,7 +58,7 @@ int main() {
             std::cin >> groepen;
             if (groepen >= 1 && groepen <= 9) {
                 std::cout << "Momentje geduld a.u.b., groepen worden gemaakt.\n";
-                NameManager::makegroup(groepen);
+                MakeGroups::makegroup(groepen);
             } else {
                 std::cout << "Ongeldige invoer, geef een getal tussen 1 en 9 op.\n";
             }
